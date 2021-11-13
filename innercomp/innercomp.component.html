@@ -1,0 +1,24 @@
+<p>innercomp works!</p>
+{{data}}
+{{data1}}
+<br>
+{{num}}
+<br>
+<button (click)="increament()">Increament</button>
+<br>
+<table>
+    <tr>
+    
+        <th>ID</th>
+        <th>NAME</th>
+        <th>AGE</th>
+    </tr>
+    <tr *ngFor="let s of students">
+<td><a (click)="selectstudent(s)">{{s.id}}</a></td>
+<td>{{s.name}}</td>
+<td>{{s.age}}</td>
+
+
+    </tr>
+</table>
+<br>

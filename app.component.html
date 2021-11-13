@@ -1,0 +1,16 @@
+<h1>component communication</h1>
+
+<app-innercomp [data]="'data from app component'" 
+ [data]="data1" 
+  (dataEmitor)="dataListener1($event)"
+  [students]="students"
+  (studentEmitor)="studentListener1($event)"
+  ></app-innercomp>
+  <br><br>
+<div  #ourdata>   this is property from UI</div><br>
+<button (click)="changecontent()">changecontentbytext</button>
+<div  #ourdata1>   this is property</div><br>
+<button (click)="changecontent()">changecontentbyhtml</button>
+<app-innercomp #one></app-innercomp>
+<!--<app-innercomp #two></app-innercomp>-->
+<app-course></app-course>
